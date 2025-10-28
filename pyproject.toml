@@ -1,0 +1,11 @@
+[project]
+name = "rtm-ethics-kernel"
+version = "0.1.0"
+description = "Deterministic ethics decision kernel with property-based proofs (stand-alone)."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["pydantic>=2.8,<3","hypothesis>=6.99,<7","pytest>=8.3,<9"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
